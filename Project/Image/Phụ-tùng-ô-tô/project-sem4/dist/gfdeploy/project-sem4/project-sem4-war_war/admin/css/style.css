@@ -1,0 +1,89 @@
+/* ANIMATION */
+
+@keyframes fadeout {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+.fade-out {
+    -webkit-animation: fadeout 1.5s;
+    animation: fadeout 1.5s;
+}
+
+@keyframes left-reversed {
+    from {right:0px;}
+    to {right:-300px;}
+}
+
+.left-reversed {
+    -webkit-animation: left-reversed 1.5s;
+    animation: left-reversed 1.5s;
+}
+
+/* GENERAL CSS */
+
+@font-face {
+    font-family: noto;
+    src:url("../fonts/NotoSansTaiViet-Regular.ttf");
+}
+
+table {
+    width: 100% !important;
+}
+
+html,body,h1,h2,h3,h4,h5 {font-family: "noto", sans-serif}
+
+/* PAGE CONTENT CSS */ 
+
+.page-content {
+    margin-left:200px; margin-top:43px;
+}
+
+/* HEADER CSS */
+
+header.header-main {
+    padding-top:22px;
+}
+
+/* NEW FEED TABLE CSS*/
+
+.nortification-table {
+    position: fixed;
+    max-width: 300px;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nortification-btn {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+}
+
+/* TOP CONTAINER CSS */
+
+.top-container {
+    z-index:4;
+}
+
+/* SIDE NAV CSS */ 
+
+.side-nav {
+    z-index:3;
+    width:200px;
+}
+
+.side-nav img {
+    width:46px;
+}
+
+/* CHART CSS */
+
+#chart_div {
+    background: #ffffff;
+}
+
+.chart-container {
+    max-width: 1101px !important;
+}

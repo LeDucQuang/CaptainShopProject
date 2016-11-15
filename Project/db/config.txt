@@ -1,0 +1,34 @@
+vao phpmyadmin run nhung lenh sau:
+
+USE mysql;
+UPDATE user SET Password=PASSWORD('root') WHERE user='root';
+FLUSH PRIVILEGES;
+
+---------------------------------------------
+sau khi chay sql xong vao file config trong thu muc phpmyadmin sua lai file config.inc.php:
+$cfg['Servers'][$i]['password'] = 'root';
+
+---------------------------------------------
+
+pool: projectPool
+
+link huong dan config pool trong glassfish: https://computingat40s.wordpress.com/how-to-setup-a-jdbc-connection-in-glassfish/
+doc roi lay thuoc tinh o ben duoi:
+
+resource type: javax.sql.DataSource
+datasource: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+properties: 
++ User: root
++ Password: root
++ URL: jdbc:mysql://localhost:3306/AAL_AUTO
++ driverClass: com.mysql.jdbc.Driver
+
+resource: projectResource
+
+----------------------------------------------
+
+neu ping pool bi loi thi copy file: "mysql-connector-java-5.1.40.jar" vao trong thu muc lib cua glassfish
+vd: C:\Program Files\glassfish-4.1\glassfish\lib
+
+
+

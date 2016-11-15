@@ -1,0 +1,300 @@
+/*
+        -----------------
+        ----KHOI.CSS-----
+        -----------------
+*/
+
+/*
+        ANIMATION
+*/
+
+@keyframes left-reversed {
+    from {left:0px;}
+    to {left:-400px;}
+}
+
+.left-reversed {
+    -webkit-animation: left-reversed 1.5s;
+    animation: left-reversed 1.5s;
+    left: -400px !important;
+
+}
+
+@keyframes right-reversed {
+    from {left:-400px;}
+    to {left:0px;}
+}
+
+.right-reversed {
+    -webkit-animation: right-reversed 1.5s;
+    animation: right-reversed 1.5s;
+    left: 0 !important;
+}
+
+@keyframes rotate-start {
+    from {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari */
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-end {
+    from {
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari */
+        transform: rotate(180deg);
+    }
+    to {
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Safari */
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-start {
+    -webkit-animation: rotate-start 1.5s;
+    animation: rotate-start 1.5s;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+.rotate-end {
+    -webkit-animation: rotate-end 1.5s;
+    animation: rotate-end 1.5s;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+}
+
+
+
+/*
+        MAIN NAV CSS
+*/
+
+.khoi-main-nav>li {
+    float: left;
+}
+
+ul.nav {
+    background: #ab6144;
+}
+
+.khoi-nav-container {
+    background: #ab6144;
+}
+
+/*
+        BANNER CSS
+*/
+
+.banner_wrap {
+    padding-bottom: 100px;
+}
+
+.khoi-fixed-banner {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    z-index: 10;
+}
+
+.banner_right {
+    float: none !important;
+    margin-top: 4em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*
+        PRODUCT CSS
+*/
+
+.khoi-product-container .col_1_of_3.span_1_of_3 {
+    -webkit-box-shadow: 0px 0px 3px rgb(150, 150, 150);
+    box-shadow: 0px 0px 3px rgb(150, 150, 150);
+}
+
+/*
+        ALIGN CENTER FOR HEADING
+*/
+
+.product_image .img-responsive {
+    margin: 0 auto;
+    width: 248px;
+    height: 258px;
+}
+
+/*
+        BRAND CSS
+*/
+
+.brands {
+    overflow: hidden;
+}
+
+ul.brand_icons {
+    width: 1000%;
+}
+
+ul.brand_icons li {
+    max-width: 200px;
+}
+
+/*
+        CART
+*/
+
+.khoi-cart-btn {
+    position: fixed;
+    left: 0;
+    top: 143px;
+}
+
+
+.khoi-cart-btn i {
+    float: none !important;
+    color: #7901FB;
+    margin-top: 6px;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.header_right {
+    padding-left: 90px
+}
+
+ul.login {
+    max-width: 200px;
+}
+
+.register-top-grid input, .register-bottom-grid input {
+    border: 1px solid #EEE;
+    outline-color: #FF5B36;
+    width: 96%;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.price-details {
+    border-bottom: none !important;
+}
+
+
+.cart-header {
+    max-width: 250px;
+    float: left;
+    padding: 0 40px;
+}
+
+.price-details span {
+    font-size: 1em;
+}
+
+input.order {
+    background: #7901FB;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    margin: 3em 0;
+    border: none;
+}
+
+.product-qty input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: #F8F8F8;
+}
+
+ul.slides li {
+    list-style: none;
+}
+
+.col_1_of_3:nth-child(1n+0) {
+    margin-left: 13px;
+}
+
+/*
+    CSS FOR INVOICE PAGE
+*/
+
+#do_action .total_area, #do_action .chose_area {
+    border: 1px solid #E6E4DF;
+    color: #696763;
+    padding: 30px 25px 30px 0;
+    margin-bottom: 80px;
+    min-height: 300px;
+}
+
+#do_action .total_area {
+    padding-bottom: 18px !important;
+}
+
+.user_info {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.user_info .single_field {
+    width: 100%;
+    padding: 20px 0;
+}
+.user_info .single_field label {
+    width: 30%;
+    float: left;
+}
+
+.user_info .single_field input, .user_info .single_field select {
+    width: 70%;
+    float: right;
+}
+
+.user_info > li {
+    float: left;
+    margin-right: 10px;
+}
+
+.total_area ul li {
+    background: #E6E4DF;
+    color: #696763;
+    margin-top: 10px;
+    padding: 7px 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*
+    CSS FOR ALERT DANGER
+*/
+
+.alert.alert-danger {
+    height: 100px;
+    padding: 40px;
+    background: #7901fb;
+    font-family: audio-wide;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+ul.nav .active {
+    background: #333;
+    color: #fff;
+}

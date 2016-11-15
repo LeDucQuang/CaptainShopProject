@@ -1,0 +1,184 @@
+/*
+	-----------------
+	----KHOI.CSS-----
+	-----------------
+*/
+
+/*
+	ANIMATION
+*/
+
+@keyframes left-reversed {
+	from {left:0px;}
+	to {left:-400px;}
+}
+
+.left-reversed {
+	-webkit-animation: left-reversed 1.5s;
+	animation: left-reversed 1.5s;
+	left: -400px !important;
+	
+}
+
+@keyframes right-reversed {
+	from {left:-400px;}
+	to {left:0px;}
+}
+
+.right-reversed {
+	-webkit-animation: right-reversed 1.5s;
+	animation: right-reversed 1.5s;
+	left: 0 !important;
+}
+
+@keyframes rotate-start {
+	from {
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari */
+		transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Safari */
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes rotate-end {
+	from {
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Safari */
+		transform: rotate(180deg);
+	}
+	to {
+		-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Safari */
+		transform: rotate(360deg);
+	}
+}
+
+.rotate-start {
+	-webkit-animation: rotate-start 1.5s;
+	animation: rotate-start 1.5s;
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari */
+	transform: rotate(180deg);
+}
+
+.rotate-end {
+	-webkit-animation: rotate-end 1.5s;
+	animation: rotate-end 1.5s;
+	-ms-transform: rotate(0deg); /* IE 9 */
+	-webkit-transform: rotate(0deg); /* Safari */
+	transform: rotate(0deg);
+}
+
+
+
+/*
+	MAIN NAV CSS
+*/
+
+.khoi-main-nav>li {
+	float: left;
+}
+
+ul.nav {
+	background: #ab6144;
+}
+
+.khoi-nav-container {
+	background: #ab6144;
+}
+
+/*
+	BANNER CSS
+*/
+
+.banner_wrap {
+	padding-bottom: 100px;
+}
+
+.khoi-fixed-banner {
+	position: fixed;
+	left: -400px;
+	top: 0;
+	z-index: 10;
+}
+
+.banner_right {
+	float: none !important;
+    margin-top: 4em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*
+	PRODUCT CSS
+*/
+
+.khoi-product-container .col_1_of_3.span_1_of_3 {
+	-webkit-box-shadow: 0px 0px 3px rgb(150, 150, 150);
+    box-shadow: 0px 0px 3px rgb(150, 150, 150);
+}
+
+/*
+	ALIGN CENTER FOR HEADING
+*/
+
+.product_image .img-responsive {
+	margin: 0 auto;
+}
+
+/*
+	BRAND CSS
+*/
+
+.brands {
+	overflow: hidden;
+}
+
+ul.brand_icons {
+	width: 1000%;
+}
+
+ul.brand_icons li {
+	max-width: 200px;
+}
+
+/*
+	CART
+*/
+
+.khoi-cart-btn {
+	position: fixed;
+	left: 0;
+	top: 143px;
+}
+
+
+.khoi-cart-btn i {
+	float: none !important;
+	color: #7901FB;
+    margin-top: 6px;
+	cursor: pointer;
+	padding: 5px 5px;
+}
+
+.header_right {
+	padding-left: 90px
+}
+
+ul.login {
+	max-width: 200px;
+}
+
+.register-top-grid input, .register-bottom-grid input {
+    border: 1px solid #EEE;
+    outline-color: #FF5B36;
+    width: 96%;
+    font-size: 1em;
+    padding: 0.5em;
+}
